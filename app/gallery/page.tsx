@@ -3,79 +3,34 @@
 export default function Gallery() {
   const nutImages = [
     {
-      src: "/pile-of-almonds.png",
-      title: "Premium Almonds",
-      description: "Fresh, crunchy almonds sourced directly from the best farms"
+      src: "/2.jpg",
+      title: "Premium Pistachios",
+      description: "Fresh, green pistachios sourced directly from the best farms"
     },
     {
-      src: "/pile-of-cashews.png",
-      title: "Cashew Nuts",
-      description: "High-quality cashews with rich, buttery flavor"
-    },
-    {
-      src: "/pile-of-cashew-nuts.png",
-      title: "Cashew Collection",
-      description: "Premium grade cashew nuts in various sizes"
-    },
-    {
-      src: "/walnuts-pile.png",
-      title: "Organic Walnuts",
+      src: "/3.jpg",
+      title: "Quality Walnuts",
       description: "Brain-healthy walnuts packed with omega-3 fatty acids"
     },
     {
-      src: "/walnuts.png",
-      title: "Fresh Walnuts",
-      description: "Premium quality walnuts for healthy snacking"
+      src: "/4.jpg",
+      title: "Premium Cashews",
+      description: "High-quality cashews with rich, buttery flavor"
     },
     {
-      src: "/pistachios-in-bowl.png",
-      title: "Pistachios in Bowl",
-      description: "Delicious pistachios served fresh and natural"
-    },
-    {
-      src: "/fresh-pistachios.png",
-      title: "Fresh Pistachios",
-      description: "Green, fresh pistachios with authentic taste"
-    },
-    {
-      src: "/roasted-almonds.png",
-      title: "Roasted Almonds",
-      description: "Perfectly roasted almonds with enhanced flavor"
-    },
-    {
-      src: "/organic-walnuts.png",
-      title: "Organic Walnut Collection",
-      description: "Certified organic walnuts for health-conscious consumers"
-    },
-    {
-      src: "/makhana-lotus-seeds.png",
-      title: "Makhana (Lotus Seeds)",
+      src: "/5.jpg",
+      title: "Fresh Makhana",
       description: "Light, nutritious lotus seeds perfect for healthy snacking"
     },
     {
-      src: "/dried-fruits-mix.png",
+      src: "/69.png",
       title: "Mixed Dry Fruits",
       description: "A perfect blend of various premium dry fruits and nuts"
     },
     {
-      src: "/2.jpg",
+      src: "/1.jpg",
       title: "Premium Collection",
-      description: "Our finest selection of mixed nuts and dry fruits"
-    },
-    {
-      src: "/3.jpg",
-      title: "Quality Assurance",
-      description: "Each nut is carefully selected for premium quality"
-    },
-    {
-      src: "/4.jpg",
-      title: "Fresh Harvest",
-      description: "Freshly harvested nuts with natural goodness"
-    },
-    {
-      src: "/5.jpg",
-      title: "Gourmet Selection",
-      description: "Gourmet quality nuts for discerning customers"
+      description: "Our finest selection of mixed nuts and dry fruits showcase"
     }
   ]
 
@@ -137,9 +92,6 @@ export default function Gallery() {
                     src={image.src} 
                     alt={image.title}
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-                    onError={(e) => {
-                      e.currentTarget.src = '/placeholder.svg'
-                    }}
                   />
                 </div>
                 <div className="p-6">
