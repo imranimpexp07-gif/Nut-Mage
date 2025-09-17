@@ -1,5 +1,16 @@
 {
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/gallery",
+      "destination": "/gallery"
+    },
+    {
+      "source": "/about", 
+      "destination": "/about"
+    }
   ]
 }
