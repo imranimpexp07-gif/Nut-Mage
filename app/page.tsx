@@ -16,7 +16,7 @@ export default function Home() {
     // Create mailto link
     const subject = `Contact Form Submission from ${name}`
     const body = `Name: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AMessage: ${message}`
-    const mailtoLink = `mailto:Marketingnutmage@gmail.com?subject=${subject}&body=${body}`
+    const mailtoLink = `mailto:Marketingnutmage@gmail.com,Imranimpexp07@gmail.com?subject=${subject}&body=${body}`
     
     window.location.href = mailtoLink
   }
@@ -190,8 +190,9 @@ export default function Home() {
                 </div>
                 <div>
                   <div className="text-xs font-semibold text-gray-500">E-MAIL</div>
-                  <div className="text-sm font-bold text-gray-700">
-                    <a href="mailto:Marketingnutmage@gmail.com" className="hover:text-green-600 break-all">Marketingnutmage@gmail.com</a>
+                  <div className="text-sm font-bold text-gray-700 space-y-1">
+                    <div><a href="mailto:Marketingnutmage@gmail.com" className="hover:text-green-600 break-all">Marketingnutmage@gmail.com</a></div>
+                    <div><a href="mailto:Imranimpexp07@gmail.com" className="hover:text-green-600 break-all">Imranimpexp07@gmail.com</a></div>
                   </div>
                 </div>
               </div>
@@ -204,7 +205,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex flex-wrap justify-center gap-4 lg:gap-12 py-3 lg:py-4">
               <a href="#home" className="text-white text-sm lg:text-base font-semibold hover:text-yellow-300 transition-colors">HOME</a>
-              <a href="#about" className="text-white text-sm lg:text-base font-semibold hover:text-yellow-300 transition-colors">ABOUT US</a>
+              <a href="/about" className="text-white text-sm lg:text-base font-semibold hover:text-yellow-300 transition-colors">ABOUT US</a>
               <a href="#products" className="text-white text-sm lg:text-base font-semibold hover:text-yellow-300 transition-colors">OUR PRODUCTS</a>
               <a href="/gallery" className="text-white text-sm lg:text-base font-semibold hover:text-yellow-300 transition-colors">GALLERY</a>
               <a href="#contact" className="text-white text-sm lg:text-base font-semibold hover:text-yellow-300 transition-colors">CONTACT US</a>
@@ -292,38 +293,70 @@ export default function Home() {
       </section>
 
       {/* We Are Here Section */}
-      <section id="about" className="py-8 md:py-12 lg:py-16 bg-gray-50">
+      <section className="py-8 md:py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">We are here!</h2>
-            <div className="w-16 h-1 bg-green-500 mx-auto"></div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">We are here!</h2>
+            <div className="w-16 h-1 bg-green-500 mx-auto mb-6"></div>
+            <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+              Your partner in premium dry fruits and nuts. We source the finest products from around the globe.
+            </p>
           </div>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4 lg:gap-6">
-            <div className="text-center group">
-              <div className="w-full h-24 sm:h-32 md:h-36 lg:h-40 rounded-lg overflow-hidden shadow-md mb-2 md:mb-4 group-hover:shadow-lg transition-shadow">
-                <img src="/2.jpg" alt="Product 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-              </div>
+          {/* Image Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
+            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="/69.png" className="w-full h-32 md:h-40 object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute bottom-2 left-2 text-white text-sm font-semibold"></div>
             </div>
-            <div className="text-center group">
-              <div className="w-full h-24 sm:h-32 md:h-36 lg:h-40 rounded-lg overflow-hidden shadow-md mb-2 md:mb-4 group-hover:shadow-lg transition-shadow">
-                <img src="/3.jpg" alt="Product 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-              </div>
+            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="/3.jpg" alt="Quality Walnuts" className="w-full h-32 md:h-40 object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute bottom-2 left-2 text-white text-sm font-semibold">Quality Walnuts</div>
             </div>
-            <div className="text-center group">
-              <div className="w-full h-24 sm:h-32 md:h-36 lg:h-40 rounded-lg overflow-hidden shadow-md mb-2 md:mb-4 group-hover:shadow-lg transition-shadow">
-                <img src="/4.jpg" alt="Product 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-              </div>
+            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="/4.jpg" alt="Fresh Cashews" className="w-full h-32 md:h-40 object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute bottom-2 left-2 text-white text-sm font-semibold">Fresh Cashews</div>
             </div>
-            <div className="text-center group">
-              <div className="w-full h-24 sm:h-32 md:h-36 lg:h-40 rounded-lg overflow-hidden shadow-md mb-2 md:mb-4 group-hover:shadow-lg transition-shadow">
-                <img src="/5.jpg" alt="Product 4" className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-              </div>
+            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="/5.jpg" alt="Pure Makhana" className="w-full h-32 md:h-40 object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute bottom-2 left-2 text-white text-sm font-semibold">Pure Makhana</div>
             </div>
-            <div className="text-center group">
-              <div className="w-full h-24 sm:h-32 md:h-36 lg:h-40 rounded-lg overflow-hidden shadow-md mb-2 md:mb-4 group-hover:shadow-lg transition-shadow">
-                <img src="/1.jpg" alt="Product 5" className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+          </div>
+
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div className="text-center bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
               </div>
+              <h3 className="text-lg font-bold text-gray-800 mb-2">Premium Quality</h3>
+              <p className="text-gray-600">Hand-picked and carefully selected products ensuring the highest quality standards</p>
+            </div>
+            
+            <div className="text-center bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-800 mb-2">Fresh & Natural</h3>
+              <p className="text-gray-600">Direct sourcing ensures maximum freshness and natural taste in every product</p>
+            </div>
+            
+            <div className="text-center bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-800 mb-2">Trusted Service</h3>
+              <p className="text-gray-600">Years of experience and commitment to customer satisfaction and reliable delivery</p>
             </div>
           </div>
         </div>
@@ -473,6 +506,10 @@ export default function Home() {
                 <div className="flex items-center gap-2 justify-center md:justify-start">
                   <span>✉️</span>
                   <a href="mailto:Marketingnutmage@gmail.com" className="hover:text-green-400 text-sm md:text-base break-all">Marketingnutmage@gmail.com</a>
+                </div>
+                <div className="flex items-center gap-2 justify-center md:justify-start">
+                  <span>✉️</span>
+                  <a href="mailto:Imranimpexp07@gmail.com" className="hover:text-green-400 text-sm md:text-base break-all">Imranimpexp07@gmail.com</a>
                 </div>
               </div>
             </div>

@@ -211,6 +211,10 @@ export default function Gallery() {
                   <span>✉️</span>
                   <a href="mailto:Marketingnutmage@gmail.com" className="hover:text-green-400">Marketingnutmage@gmail.com</a>
                 </div>
+                <div className="flex items-center gap-2">
+                  <span>✉️</span>
+                  <a href="mailto:Imranimpexp07@gmail.com" className="hover:text-green-400">Imranimpexp07@gmail.com</a>
+                </div>
               </div>
             </div>
             
