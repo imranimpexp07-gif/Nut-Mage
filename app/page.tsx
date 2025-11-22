@@ -513,7 +513,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2 justify-center md:justify-start">
                   <span>✉️</span>
-                  <a href="mailto:Sofia_07@gmail.com" className="hover:text-green-400 text-sm md:text-base break-all">Imranimpexp07@gmail.com</a>
+                  <a href="mailto:Sofia_07@gmail.com" className="hover:text-green-400 text-sm md:text-base break-all">Sofia_07@gmail.com</a>
                 </div>
               </div>
             </div>
