@@ -193,6 +193,7 @@ export default function Home() {
                   <div className="text-sm font-bold text-gray-700 space-y-1">
                     <div><a href="mailto:Marketingnutmage@gmail.com" className="hover:text-green-600 break-all">Marketingnutmage@gmail.com</a></div>
                     <div><a href="mailto:Imranimpexp07@gmail.com" className="hover:text-green-600 break-all">Imranimpexp07@gmail.com</a></div>
+                    <div><a href="mailto:Sofia_07@gmail.com" className="hover:text-green-600 break-all">Sofia_07@gmail.com</a></div>
                   </div>
                 </div>
               </div>
