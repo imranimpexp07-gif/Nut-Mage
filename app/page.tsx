@@ -265,30 +265,18 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Side Images - Hidden on Mobile */}
+          {/* Side Images removed as requested */}
           <div className="hidden lg:block absolute left-8 top-1/2 transform -translate-y-1/2 space-y-4">
-            <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-lg overflow-hidden shadow-lg">
-              <img src="/pile-of-cashews.png" alt="Cashews" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-lg overflow-hidden shadow-lg">
-              <img src="/walnuts-pile.png" alt="Walnuts" className="w-full h-full object-cover" />
-            </div>
+            <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-lg overflow-hidden shadow-lg bg-green-100" />
+            <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-lg overflow-hidden shadow-lg bg-green-100" />
           </div>
 
-          {/* Right Side Product Images - Hidden on Mobile */}
+          {/* Right side images removed as requested */}
           <div className="hidden md:grid absolute right-4 md:right-6 lg:right-8 bottom-16 md:bottom-8 grid-cols-2 gap-2 md:gap-3">
-            <div className="w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-lg overflow-hidden shadow-lg">
-              <img src="/pistachios-in-bowl.png" alt="Pistachios" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-lg overflow-hidden shadow-lg">
-              <img src="/pile-of-almonds.png" alt="Almonds" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-lg overflow-hidden shadow-lg">
-              <img src="/roasted-almonds.png" alt="Roasted Almonds" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-lg overflow-hidden shadow-lg">
-              <img src="/fresh-pistachios.png" alt="Fresh Pistachios" className="w-full h-full object-cover" />
-            </div>
+            <div className="w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-lg overflow-hidden shadow-lg bg-green-100" />
+            <div className="w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-lg overflow-hidden shadow-lg bg-green-100" />
+            <div className="w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-lg overflow-hidden shadow-lg bg-green-100" />
+            <div className="w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-lg overflow-hidden shadow-lg bg-green-100" />
           </div>
         </div>
       </section>
@@ -304,27 +292,19 @@ export default function Home() {
             </p>
           </div>
           
-          {/* Image Grid */}
+          {/* Image Grid removed as requested */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
-            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img src="/69.png" className="w-full h-32 md:h-40 object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-              <div className="absolute bottom-2 left-2 text-white text-sm font-semibold"></div>
+            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gray-100 h-32 md:h-40 flex items-center justify-center">
+              <span className="text-gray-500 text-sm">Premium Selection</span>
             </div>
-            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img src="/3.jpg" alt="Quality Walnuts" className="w-full h-32 md:h-40 object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-              <div className="absolute bottom-2 left-2 text-white text-sm font-semibold">Quality Walnuts</div>
+            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gray-100 h-32 md:h-40 flex items-center justify-center">
+              <span className="text-gray-500 text-sm">Quality Walnuts</span>
             </div>
-            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img src="/4.jpg" alt="Fresh Cashews" className="w-full h-32 md:h-40 object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-              <div className="absolute bottom-2 left-2 text-white text-sm font-semibold">Fresh Cashews</div>
+            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gray-100 h-32 md:h-40 flex items-center justify-center">
+              <span className="text-gray-500 text-sm">Fresh Cashews</span>
             </div>
-            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img src="/5.jpg" alt="Pure Makhana" className="w-full h-32 md:h-40 object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-              <div className="absolute bottom-2 left-2 text-white text-sm font-semibold">Pure Makhana</div>
+            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gray-100 h-32 md:h-40 flex items-center justify-center">
+              <span className="text-gray-500 text-sm">Pure Makhana</span>
             </div>
           </div>
 
@@ -373,7 +353,9 @@ export default function Home() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="/2.jpg" alt="Pistachios" className="w-full h-48 md:h-56 lg:h-64 object-cover" />
+              <div className="w-full h-48 md:h-56 lg:h-64 bg-gray-100 flex items-center justify-center">
+                <span className="text-gray-500">Pistachios</span>
+              </div>
               <div className="p-4 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">Pistachios</h3>
                 <p className="text-sm md:text-base text-gray-600">High-quality pistachios, celebrated for unique flavor and vibrant color.</p>
@@ -381,7 +363,9 @@ export default function Home() {
             </div>
             
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="/3.jpg" alt="Walnuts" className="w-full h-48 md:h-56 lg:h-64 object-cover" />
+              <div className="w-full h-48 md:h-56 lg:h-64 bg-gray-100 flex items-center justify-center">
+                <span className="text-gray-500">Walnuts</span>
+              </div>
               <div className="p-4 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">Walnuts</h3>
                 <p className="text-sm md:text-base text-gray-600">Premium quality walnuts, selected for rich taste and health benefits.</p>
@@ -389,7 +373,9 @@ export default function Home() {
             </div>
             
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="/4.jpg" alt="Cashews" className="w-full h-48 md:h-56 lg:h-64 object-cover" />
+              <div className="w-full h-48 md:h-56 lg:h-64 bg-gray-100 flex items-center justify-center">
+                <span className="text-gray-500">Cashews</span>
+              </div>
               <div className="p-4 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">Cashews</h3>
                 <p className="text-sm md:text-base text-gray-600">Full range of cashew grades, from whole kernels to broken pieces.</p>
@@ -397,7 +383,9 @@ export default function Home() {
             </div>
             
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="/5.jpg" alt="Makhana" className="w-full h-48 md:h-56 lg:h-64 object-cover" />
+              <div className="w-full h-48 md:h-56 lg:h-64 bg-gray-100 flex items-center justify-center">
+                <span className="text-gray-500">Makhana</span>
+              </div>
               <div className="p-4 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">Makhana</h3>
                 <p className="text-sm md:text-base text-gray-600">Makhana (Lotus Seeds). Available in all grades, sourced for light texture and nutritional value.</p>
