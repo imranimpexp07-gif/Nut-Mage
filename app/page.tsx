@@ -96,120 +96,94 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header Section */}
-      <header className="bg-white shadow-sm">
-        {/* Top Header with Logo and Contact */}
-        <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:items-center lg:justify-between">
-            {/* Top Row: Logo and Contact Info */}
-            <div className="flex items-center justify-between lg:flex-1">
-              {/* Logo */}
-              <div className="flex items-center">
-                <div className="w-12 h-12 lg:w-16 lg:h-16 rounded-full overflow-hidden border-2 border-green-500 shadow-md">
-                  <img 
-                    src="/images/nut-mage-logo.jpg" 
-                    alt="Nut Mage Logo" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="ml-3">
-                  <div className="text-lg lg:text-xl font-bold text-gray-800">Nut Mage</div>
-                  <div className="text-xs lg:text-sm text-gray-600">Premium Dry Fruits</div>
-                </div>
+      <header className="bg-white border-b border-gray-100">
+        {/* Sleek Top Bar */}
+        <div className="max-w-7xl mx-auto px-4 py-3 lg:py-4">
+          <div className="flex items-center justify-between gap-4">
+            {/* Logo - Compact */}
+            <div className="flex items-center gap-3 flex-shrink-0">
+              <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden border border-green-500 shadow-sm">
+                <img 
+                  src="/images/nut-mage-logo.jpg" 
+                  alt="Nut Mage Logo" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-
-              {/* Contact Info - Mobile Compact */}
-              <div className="flex lg:hidden items-center space-x-4">
-                <div className="flex items-center space-x-1">
-                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                    <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="text-xs font-bold text-gray-700">
-                      <a href="tel:+919319527526" className="hover:text-green-600">+91-9319527526</a>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-1">
-                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                    <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                </div>
+              <div className="hidden sm:block">
+                <div className="text-sm lg:text-base font-bold text-gray-900">Nut Mage</div>
+                <div className="text-xs text-gray-500">Premium Dry Fruits</div>
               </div>
             </div>
 
-            {/* Search Bar */}
-            <div className="w-full lg:flex-1 max-w-md lg:mx-8">
+            {/* Search Bar - Center */}
+            <div className="flex-1 max-w-sm lg:max-w-md">
               <form onSubmit={handleSearch} className="relative">
                 <input
                   type="text"
-                  placeholder="Search products, gallery, contact..."
+                  placeholder="Search..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full px-4 py-2 lg:py-3 border-2 border-gray-200 rounded-full focus:outline-none focus:border-green-500 text-sm lg:text-base"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 text-sm bg-gray-50"
                 />
                 <button 
                   type="submit"
-                  className="absolute right-3 top-1/2 transform -translate-y-1/2 hover:text-green-600 transition-colors"
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-green-600 transition-colors"
                 >
-                  <svg className="w-4 h-4 lg:w-5 lg:h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </button>
               </form>
             </div>
 
-            {/* Contact Info - Desktop Full */}
-            <div className="hidden lg:flex items-center gap-8">
-              <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
+            {/* Contact Info - Right */}
+            <div className="hidden lg:flex items-center gap-6">
+              <a href="tel:+919319527526" className="flex items-center gap-2 hover:text-green-600 transition-colors">
+                <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <div className="text-sm">
+                  <div className="text-xs text-gray-500">Call</div>
+                  <div className="font-semibold text-gray-800">+91-9319527526</div>
                 </div>
-                <div>
-                  <div className="text-xs font-semibold text-gray-500">CALL US</div>
-                  <div className="text-sm font-bold text-gray-700">
-                    <a href="tel:+919319527526" className="hover:text-green-600">+91-9319527526</a>
-                  </div>
-                  <div className="text-sm font-bold text-gray-700">
-                    <a href="tel:+919810159907" className="hover:text-green-600">+91-9810159907</a>
-                  </div>
-                </div>
-              </div>
+              </a>
               
-              <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
+              <a href="mailto:marketingnutmage@gmail.com" className="flex items-center gap-2 hover:text-green-600 transition-colors">
+                <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <div className="text-sm">
+                  <div className="text-xs text-gray-500">Email</div>
+                  <div className="font-semibold text-gray-800 text-xs">marketingnutmage@gmail.com</div>
                 </div>
-                <div>
-                  <div className="text-xs font-semibold text-gray-500">E-MAIL</div>
-                  <div className="text-sm font-bold text-gray-700 space-y-1">
-                    <div><a href="mailto:Marketingnutmage@gmail.com" className="hover:text-green-600 break-all">Marketingnutmage@gmail.com</a></div>
-                    <div><a href="mailto:Imranimpexp07@gmail.com" className="hover:text-green-600 break-all">Imranimpexp07@gmail.com</a></div>
-                    <div><a href="mailto:Sofia_07@gmail.com" className="hover:text-green-600 break-all">Sofia_07@gmail.com</a></div>
-                  </div>
-                </div>
-              </div>
+              </a>
+            </div>
+
+            {/* Mobile Menu Icon */}
+            <div className="lg:hidden flex items-center gap-2">
+              <a href="tel:+919319527526" className="text-green-600 hover:text-green-700">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </a>
+              <a href="mailto:marketingnutmage@gmail.com" className="text-green-600 hover:text-green-700">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
 
         {/* Navigation Menu */}
-        <nav className="bg-green-600">
+        <nav className="bg-green-600 border-t border-green-700">
           <div className="max-w-7xl mx-auto px-4">
-            <div className="flex flex-wrap justify-center gap-4 lg:gap-12 py-3 lg:py-4">
-              <a href="#home" className="text-white text-sm lg:text-base font-semibold hover:text-yellow-300 transition-colors">HOME</a>
-              <a href="/about" className="text-white text-sm lg:text-base font-semibold hover:text-yellow-300 transition-colors">ABOUT US</a>
-              <a href="#products" className="text-white text-sm lg:text-base font-semibold hover:text-yellow-300 transition-colors">OUR PRODUCTS</a>
-              <a href="/gallery" className="text-white text-sm lg:text-base font-semibold hover:text-yellow-300 transition-colors">GALLERY</a>
-              <a href="#contact" className="text-white text-sm lg:text-base font-semibold hover:text-yellow-300 transition-colors">CONTACT US</a>
+            <div className="flex flex-wrap justify-center gap-2 lg:gap-8 py-2 lg:py-3">
+              <a href="#home" className="text-white text-xs lg:text-sm font-semibold hover:text-green-100 transition-colors py-2">HOME</a>
+              <a href="/about" className="text-white text-xs lg:text-sm font-semibold hover:text-green-100 transition-colors py-2">ABOUT US</a>
+              <a href="#products" className="text-white text-xs lg:text-sm font-semibold hover:text-green-100 transition-colors py-2">OUR PRODUCTS</a>
+              <a href="/gallery" className="text-white text-xs lg:text-sm font-semibold hover:text-green-100 transition-colors py-2">GALLERY</a>
+              <a href="#contact" className="text-white text-xs lg:text-sm font-semibold hover:text-green-100 transition-colors py-2">CONTACT US</a>
             </div>
           </div>
         </nav>
@@ -223,25 +197,26 @@ export default function Home() {
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/1.jpg')`
         }}
       >
-        {/* Top Text Overlay */}
-        <div className="absolute top-4 md:top-6 lg:top-8 left-1/2 transform -translate-x-1/2 text-center text-white z-10 px-4">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-2 tracking-wide drop-shadow-lg">
-            Your Partner in Premium
-          </h1>
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-yellow-300 tracking-wide drop-shadow-md">
-            Dry Fruits & Nuts
-          </h2>
-        </div>
-
         <div className="absolute inset-0 flex flex-col lg:flex-row items-center justify-between p-4">
-          {/* Center Logo for Mobile, Left for Desktop */}
-          <div className="flex-1 flex justify-center items-center mt-16 lg:mt-0">
-            <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-green-500 shadow-2xl">
+          {/* Center Logo Above Text - Mobile and Desktop */}
+          <div className="flex-1 flex flex-col items-center justify-center text-center">
+            {/* Logo - Increased size */}
+            <div className="w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-green-500 shadow-2xl mb-6 lg:mb-8">
               <img 
                 src="/images/nut-mage-logo.jpg" 
                 alt="Nut Mage" 
                 className="w-full h-full object-cover"
               />
+            </div>
+
+            {/* Text Below Logo */}
+            <div className="text-white z-10">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-2 tracking-wide drop-shadow-lg">
+                Your Partner in Premium
+              </h1>
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-yellow-300 tracking-wide drop-shadow-md">
+                Dry Fruits & Nuts
+              </h2>
             </div>
           </div>
 
@@ -265,19 +240,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Side Images removed as requested */}
-          <div className="hidden lg:block absolute left-8 top-1/2 transform -translate-y-1/2 space-y-4">
-            <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-lg overflow-hidden shadow-lg bg-green-100" />
-            <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-lg overflow-hidden shadow-lg bg-green-100" />
-          </div>
-
-          {/* Right side images removed as requested */}
-          <div className="hidden md:grid absolute right-4 md:right-6 lg:right-8 bottom-16 md:bottom-8 grid-cols-2 gap-2 md:gap-3">
-            <div className="w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-lg overflow-hidden shadow-lg bg-green-100" />
-            <div className="w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-lg overflow-hidden shadow-lg bg-green-100" />
-            <div className="w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-lg overflow-hidden shadow-lg bg-green-100" />
-            <div className="w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-lg overflow-hidden shadow-lg bg-green-100" />
-          </div>
         </div>
       </section>
 
@@ -290,22 +252,6 @@ export default function Home() {
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
               Your partner in premium dry fruits and nuts. We source the finest products from around the globe.
             </p>
-          </div>
-          
-          {/* Image Grid removed as requested */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
-            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gray-100 h-32 md:h-40 flex items-center justify-center">
-              <span className="text-gray-500 text-sm">Premium Selection</span>
-            </div>
-            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gray-100 h-32 md:h-40 flex items-center justify-center">
-              <span className="text-gray-500 text-sm">Quality Walnuts</span>
-            </div>
-            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gray-100 h-32 md:h-40 flex items-center justify-center">
-              <span className="text-gray-500 text-sm">Fresh Cashews</span>
-            </div>
-            <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gray-100 h-32 md:h-40 flex items-center justify-center">
-              <span className="text-gray-500 text-sm">Pure Makhana</span>
-            </div>
           </div>
 
           {/* Features Grid */}
