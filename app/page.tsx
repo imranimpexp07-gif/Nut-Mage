@@ -337,8 +337,8 @@ export default function Home() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="w-full h-48 md:h-56 lg:h-64 bg-gray-100 flex items-center justify-center">
-                <span className="text-gray-500">Pistachios</span>
+              <div className="w-full h-48 md:h-56 lg:h-64 bg-gray-50 overflow-hidden">
+                <img src="/2.jpg" alt="Pistachios" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">Pistachios</h3>
@@ -347,8 +347,8 @@ export default function Home() {
             </div>
             
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="w-full h-48 md:h-56 lg:h-64 bg-gray-100 flex items-center justify-center">
-                <span className="text-gray-500">Walnuts</span>
+              <div className="w-full h-48 md:h-56 lg:h-64 bg-gray-50 overflow-hidden">
+                <img src="/3.jpg" alt="Walnuts" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">Walnuts</h3>
@@ -357,8 +357,8 @@ export default function Home() {
             </div>
             
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="w-full h-48 md:h-56 lg:h-64 bg-gray-100 flex items-center justify-center">
-                <span className="text-gray-500">Cashews</span>
+              <div className="w-full h-48 md:h-56 lg:h-64 bg-gray-50 overflow-hidden">
+                <img src="/4.jpg" alt="Cashews" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">Cashews</h3>
@@ -367,8 +367,8 @@ export default function Home() {
             </div>
             
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="w-full h-48 md:h-56 lg:h-64 bg-gray-100 flex items-center justify-center">
-                <span className="text-gray-500">Makhana</span>
+              <div className="w-full h-48 md:h-56 lg:h-64 bg-gray-50 overflow-hidden">
+                <img src="/5.jpg" alt="Makhana" className="w-full h-full object-cover" />
               </div>
               <div className="p-4 md:p-6">
                 <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">Makhana</h3>
