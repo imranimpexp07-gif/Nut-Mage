@@ -21,16 +21,6 @@ export default function Gallery() {
       src: "/5.jpg",
       title: "Fresh Makhana",
       description: "Light, nutritious lotus seeds perfect for healthy snacking"
-    },
-    {
-      src: "/69.png",
-      title: "Mixed Dry Fruits",
-      description: "A perfect blend of various premium dry fruits and nuts"
-    },
-    {
-      src: "/1.jpg",
-      title: "Premium Collection",
-      description: "Our finest selection of mixed nuts and dry fruits showcase"
     }
   ]
 
@@ -130,6 +120,14 @@ export default function Gallery() {
             >
               📞 +91-9810159907
             </a>
+            <a 
+              href="https://wa.me/919810159907" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-bold transition-colors flex items-center gap-2"
+            >
+              💬 WhatsApp
+            </a>
           </div>
         </div>
       </section>
@@ -137,46 +135,67 @@ export default function Gallery() {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-green-500">
-                  <img src="/images/nut-mage-logo.jpg" alt="Nut Mage Logo" className="w-full h-full object-cover" />
-                </div>
-                <h3 className="text-xl font-bold ml-3">Nut Mage</h3>
+          {/* Company Info */}
+          <div className="text-center mb-6">
+            <div className="flex items-center justify-center mb-3">
+              <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-green-500">
+                <img src="/images/nut-mage-logo.jpg" alt="Nut Mage Logo" className="w-full h-full object-cover" />
               </div>
-              <p className="text-gray-300">Your trusted partner for premium quality dry fruits and nuts.</p>
+              <h3 className="text-xl md:text-2xl font-bold ml-3">Nut Mage</h3>
             </div>
-            
-            <div>
-              <h4 className="text-lg font-bold mb-4">Contact Info</h4>
-              <div className="space-y-2">
-                <div className="flex items-center gap-2">
-                  <span>📞</span>
-                  <a href="tel:+919319527526" className="hover:text-green-400">+91-9319527526</a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span>📞</span>
-                  <a href="tel:+919810159907" className="hover:text-green-400">+91-9810159907</a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span>✉️</span>
-                  <a href="mailto:Marketingnutmage@gmail.com" className="hover:text-green-400">Marketingnutmage@gmail.com</a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span>✉️</span>
-                  <a href="mailto:Imranimpexp07@gmail.com" className="hover:text-green-400">Imranimpexp07@gmail.com</a>
-                </div>
+            <p className="text-gray-300">Your trusted partner for premium quality dry fruits and nuts.</p>
+          </div>
+
+          {/* Contact Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            {/* Phone */}
+            <div className="bg-gray-700 rounded-lg p-4 hover:bg-gray-650 transition-colors">
+              <div className="flex items-center gap-2 mb-3 text-green-400">
+                <span className="text-xl">📞</span>
+                <h4 className="font-bold text-sm">PHONE</h4>
+              </div>
+              <div className="space-y-2 text-xs">
+                <div><a href="tel:+919319527526" className="text-gray-300 hover:text-green-400 transition-colors">+91-9319527526</a></div>
+                <div><a href="tel:+919810159907" className="text-gray-300 hover:text-green-400 transition-colors">+91-9810159907</a></div>
+                <a href="https://wa.me/919810159907" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 hover:bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold transition-colors mt-2">
+                  💬 WhatsApp
+                </a>
               </div>
             </div>
-            
-            <div>
-              <h4 className="text-lg font-bold mb-4">Navigation</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li><a href="/" className="hover:text-green-400">Home</a></li>
-                <li><a href="/#products" className="hover:text-green-400">Our Products</a></li>
-                <li><a href="/gallery" className="hover:text-green-400">Gallery</a></li>
-                <li><a href="/#contact" className="hover:text-green-400">Contact</a></li>
+
+            {/* Email */}
+            <div className="bg-gray-700 rounded-lg p-4 hover:bg-gray-650 transition-colors">
+              <div className="flex items-center gap-2 mb-3 text-green-400">
+                <span className="text-xl">✉️</span>
+                <h4 className="font-bold text-sm">EMAIL</h4>
+              </div>
+              <div className="text-xs">
+                <a href="mailto:Marketing@nutmage.com" className="text-gray-300 hover:text-green-400 transition-colors break-all">Marketing@nutmage.com</a>
+              </div>
+            </div>
+
+            {/* Business Details */}
+            <div className="bg-gray-700 rounded-lg p-4 hover:bg-gray-650 transition-colors">
+              <div className="flex items-center gap-2 mb-3 text-green-400">
+                <span className="text-xl">🔖</span>
+                <h4 className="font-bold text-sm">BUSINESS INFO</h4>
+              </div>
+              <div className="space-y-2 text-xs text-gray-300">
+                <div><span className="text-gray-400">IEC:</span> EUGPA4906P</div>
+                <div><span className="text-gray-400">GSTIN:</span> 07EUGPA4906P1ZC</div>
+              </div>
+            </div>
+
+            {/* Navigation */}
+            <div className="bg-gray-700 rounded-lg p-4 hover:bg-gray-650 transition-colors">
+              <div className="flex items-center gap-2 mb-3 text-green-400">
+                <span className="text-xl">📋</span>
+                <h4 className="font-bold text-sm">QUICK LINKS</h4>
+              </div>
+              <ul className="space-y-2 text-xs text-gray-300">
+                <li><a href="/" className="hover:text-green-400 transition-colors">Home</a></li>
+                <li><a href="/#products" className="hover:text-green-400 transition-colors">Products</a></li>
+                <li><a href="/#contact" className="hover:text-green-400 transition-colors">Contact</a></li>
               </ul>
             </div>
           </div>
