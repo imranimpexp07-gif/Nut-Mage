@@ -16,7 +16,7 @@ export default function Home() {
     // Create mailto link
     const subject = `Contact Form Submission from ${name}`
     const body = `Name: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AMessage: ${message}`
-    const mailtoLink = `mailto:Marketingnutmage@gmail.com,Imranimpexp07@gmail.com?subject=${subject}&body=${body}`
+    const mailtoLink = `mailto:Marketing@nutmage.com?subject=${subject}&body=${body}`
     
     window.location.href = mailtoLink
   }
@@ -148,13 +148,13 @@ export default function Home() {
                 </div>
               </a>
               
-              <a href="mailto:marketingnutmage@gmail.com" className="flex items-center gap-2 hover:text-green-600 transition-colors">
+              <a href="mailto:Marketing@nutmage.com" className="flex items-center gap-2 hover:text-green-600 transition-colors">
                 <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 <div className="text-sm">
                   <div className="text-xs text-gray-500">Email</div>
-                  <div className="font-semibold text-gray-800 text-xs">marketingnutmage@gmail.com</div>
+                  <div className="font-semibold text-gray-800 text-xs">Marketing@nutmage.com</div>
                 </div>
               </a>
             </div>
@@ -244,46 +244,84 @@ export default function Home() {
       </section>
 
       {/* We Are Here Section */}
-      <section className="py-8 md:py-12 lg:py-16 bg-white">
+      <section className="py-8 md:py-12 lg:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">We are here!</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-2">We are here!</h2>
             <div className="w-16 h-1 bg-green-500 mx-auto mb-6"></div>
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
               Your partner in premium dry fruits and nuts. We source the finest products from around the globe.
             </p>
           </div>
 
+          {/* Image Cards Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
+            <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group h-48">
+              <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                <div className="text-center p-4">
+                  <div className="w-20 h-20 mx-auto mb-2 bg-white rounded-full flex items-center justify-center">
+                    <svg className="w-12 h-12 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7z"/>
+                    </svg>
+                  </div>
+                  <h3 className="text-sm font-bold text-gray-700">SOFIA</h3>
+                  <p className="text-xs text-gray-600">Global Trade Ventures</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group h-48">
+              <img src="/3.jpg" alt="Quality Walnuts" className="w-full h-full object-cover" />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <h3 className="text-white font-bold text-lg">Quality Walnuts</h3>
+              </div>
+            </div>
+
+            <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group h-48">
+              <img src="/4.jpg" alt="Fresh Cashews" className="w-full h-full object-cover" />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <h3 className="text-white font-bold text-lg">Fresh Cashews</h3>
+              </div>
+            </div>
+
+            <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group h-48">
+              <img src="/5.jpg" alt="Pure Makhana" className="w-full h-full object-cover" />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <h3 className="text-white font-bold text-lg">Pure Makhana</h3>
+              </div>
+            </div>
+          </div>
+
           {/* Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            <div className="text-center bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow">
+            <div className="text-center bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">Premium Quality</h3>
-              <p className="text-gray-600">Hand-picked and carefully selected products ensuring the highest quality standards</p>
+              <p className="text-gray-600 text-sm">Hand-picked and carefully selected products ensuring the highest quality standards</p>
             </div>
             
-            <div className="text-center bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow">
+            <div className="text-center bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">Fresh & Natural</h3>
-              <p className="text-gray-600">Direct sourcing ensures maximum freshness and natural taste in every product</p>
+              <p className="text-gray-600 text-sm">Direct sourcing ensures maximum freshness and natural taste in every product</p>
             </div>
             
-            <div className="text-center bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow">
+            <div className="text-center bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">Trusted Service</h3>
-              <p className="text-gray-600">Years of experience and commitment to customer satisfaction and reliable delivery</p>
+              <p className="text-gray-600 text-sm">Years of experience and commitment to customer satisfaction and reliable delivery</p>
             </div>
           </div>
         </div>
@@ -412,51 +450,75 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-6 md:py-8">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            <div className="text-center md:text-left">
-              <div className="flex items-center justify-center md:justify-start mb-4">
-                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden border-2 border-green-500">
-                  <img src="/images/nut-mage-logo.jpg" alt="Nut Mage Logo" className="w-full h-full object-cover" />
-                </div>
-                <h3 className="text-lg md:text-xl font-bold ml-3">Nut Mage</h3>
+          {/* Company Info */}
+          <div className="text-center mb-6">
+            <div className="flex items-center justify-center mb-3">
+              <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-green-500">
+                <img src="/images/nut-mage-logo.jpg" alt="Nut Mage Logo" className="w-full h-full object-cover" />
               </div>
-              <p className="text-gray-300 text-sm md:text-base">Your trusted partner for premium quality dry fruits and nuts.</p>
+              <h3 className="text-xl md:text-2xl font-bold ml-3">Nut Mage</h3>
             </div>
-            
-            <div className="text-center md:text-left">
-              <h4 className="text-base md:text-lg font-bold mb-4">Contact Info</h4>
-              <div className="space-y-2">
-                <div className="flex items-center gap-2 justify-center md:justify-start">
-                  <span>📍</span>
-                  <span className="text-sm md:text-base text-gray-300">C-62,63, Sec-1 Avantika, Rohini, New Delhi, NORTH DELHI, DELHI, 110085</span>
-                </div>
-                <div className="flex items-center gap-2 justify-center md:justify-start">
-                  <span>📞</span>
-                  <a href="tel:+919319527526" className="hover:text-green-400 text-sm md:text-base">+91-9319527526</a>
-                </div>
-                <div className="flex items-center gap-2 justify-center md:justify-start">
-                  <span>📞</span>
-                  <a href="tel:+919810159907" className="hover:text-green-400 text-sm md:text-base">+91-9810159907</a>
-                </div>
-                <div className="flex items-center gap-2 justify-center md:justify-start">
-                  <span>✉️</span>
-                  <a href="mailto:Marketingnutmage@gmail.com" className="hover:text-green-400 text-sm md:text-base break-all">Marketingnutmage@gmail.com</a>
-                </div>
-                <div className="flex items-center gap-2 justify-center md:justify-start">
-                  <span>✉️</span>
-                  <a href="mailto:Imranimpexp07@gmail.com" className="hover:text-green-400 text-sm md:text-base break-all">Imranimpexp07@gmail.com</a>
-                </div>
+            <p className="text-gray-300 text-sm md:text-base">Your trusted partner for premium dry fruits and nuts.</p>
+          </div>
+
+          {/* Contact Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            {/* Address */}
+            <div className="bg-gray-700 rounded-lg p-4 hover:bg-gray-650 transition-colors">
+              <div className="flex items-center gap-2 mb-3 text-green-400">
+                <span className="text-xl">📍</span>
+                <h4 className="font-bold text-sm">ADDRESS</h4>
+              </div>
+              <p className="text-gray-300 text-xs leading-relaxed">
+                C-62, Sec-1 Avantika, Rohini,<br/>
+                New Delhi, NORTH DELHI,<br/>
+                Delhi, 110085
+              </p>
+            </div>
+
+            {/* Phone */}
+            <div className="bg-gray-700 rounded-lg p-4 hover:bg-gray-650 transition-colors">
+              <div className="flex items-center gap-2 mb-3 text-green-400">
+                <span className="text-xl">📞</span>
+                <h4 className="font-bold text-sm">PHONE</h4>
+              </div>
+              <div className="space-y-2 text-xs">
+                <div><a href="tel:+919319527526" className="text-gray-300 hover:text-green-400 transition-colors">+91-9319527526</a></div>
+                <div><a href="tel:+919810159907" className="text-gray-300 hover:text-green-400 transition-colors">+91-9810159907</a></div>
               </div>
             </div>
-            
-            <div className="text-center md:text-left">
-              <h4 className="text-base md:text-lg font-bold mb-4">Our Products</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li className="text-sm md:text-base">Makhana (Lotus Seeds)</li>
-                <li className="text-sm md:text-base">Premium Cashew Nuts</li>
-                <li className="text-sm md:text-base">Organic Walnuts</li>
-                <li className="text-sm md:text-base">Fresh Pistachios</li>
-              </ul>
+
+            {/* Email */}
+            <div className="bg-gray-700 rounded-lg p-4 hover:bg-gray-650 transition-colors">
+              <div className="flex items-center gap-2 mb-3 text-green-400">
+                <span className="text-xl">✉️</span>
+                <h4 className="font-bold text-sm">EMAIL</h4>
+              </div>
+              <div className="text-xs">
+                <a href="mailto:Marketing@nutmage.com" className="text-gray-300 hover:text-green-400 transition-colors break-all">Marketing@nutmage.com</a>
+              </div>
+            </div>
+
+            {/* Business Details */}
+            <div className="bg-gray-700 rounded-lg p-4 hover:bg-gray-650 transition-colors">
+              <div className="flex items-center gap-2 mb-3 text-green-400">
+                <span className="text-xl">🔖</span>
+                <h4 className="font-bold text-sm">BUSINESS INFO</h4>
+              </div>
+              <div className="space-y-2 text-xs text-gray-300">
+                <div><span className="text-gray-400">IEC:</span> 05XX9999XX</div>
+                <div><span className="text-gray-400">GSTIN:</span> 07ABCDE1234F1Z9</div>
+              </div>
+            </div>
+          </div>
+          {/* Products */}
+          <div className="text-center mb-6">
+            <h4 className="text-base font-bold mb-3 text-green-400">OUR PREMIUM PRODUCTS</h4>
+            <div className="flex flex-wrap justify-center gap-3 text-xs text-gray-300">
+              <span className="bg-gray-700 px-3 py-1 rounded-full">Makhana</span>
+              <span className="bg-gray-700 px-3 py-1 rounded-full">Premium Cashews</span>
+              <span className="bg-gray-700 px-3 py-1 rounded-full">Organic Walnuts</span>
+              <span className="bg-gray-700 px-3 py-1 rounded-full">Fresh Pistachios</span>
             </div>
           </div>
           
