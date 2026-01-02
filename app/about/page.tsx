@@ -94,6 +94,9 @@ export default function About() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-600">
+                <p className="font-semibold text-gray-800">
+                  Nutmage is a brand owned by Sofia Global Trade Ventures, a Sole Proprietorship firm registered under the laws of India.
+                </p>
                 <p>
                   Nut Mage was founded with a simple yet powerful vision: to bring the finest quality dry fruits and nuts from around the globe to your doorstep. We believe that premium nutrition should be accessible to everyone who values quality and health.
                 </p>
@@ -300,6 +303,9 @@ export default function About() {
               <div className="space-y-2 text-xs">
                 <div><a href="tel:+919319527526" className="text-gray-300 hover:text-green-400 transition-colors">+91-9319527526</a></div>
                 <div><a href="tel:+919810159907" className="text-gray-300 hover:text-green-400 transition-colors">+91-9810159907</a></div>
+                <a href="https://wa.me/919810159907" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 hover:bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold transition-colors mt-2">
+                  💬 WhatsApp
+                </a>
               </div>
             </div>
 
@@ -321,8 +327,8 @@ export default function About() {
                 <h4 className="font-bold text-sm">BUSINESS INFO</h4>
               </div>
               <div className="space-y-2 text-xs text-gray-300">
-                <div><span className="text-gray-400">IEC:</span> 05XX9999XX</div>
-                <div><span className="text-gray-400">GSTIN:</span> 07ABCDE1234F1Z9</div>
+                <div><span className="text-gray-400">IEC:</span> EUGPA4906P</div>
+                <div><span className="text-gray-400">GSTIN:</span> 07EUGPA4906P1ZC</div>
               </div>
             </div>
           </div>
