@@ -137,7 +137,7 @@ export default function Home() {
             </div>
 
             {/* Contact Info - Right */}
-            <div className="hidden lg:flex items-center gap-6">
+            <div className="hidden lg:flex items-center gap-4">
               <a href="tel:+919319527526" className="flex items-center gap-2 hover:text-green-600 transition-colors">
                 <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -157,6 +157,14 @@ export default function Home() {
                   <div className="font-semibold text-gray-800 text-xs">Marketing@nutmage.com</div>
                 </div>
               </a>
+
+              <a href="https://wa.me/919810159907" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition-colors">
+                <span className="text-lg">💬</span>
+                <div className="text-sm">
+                  <div className="text-xs font-medium">WhatsApp</div>
+                  <div className="font-semibold">+91-9810159907</div>
+                </div>
+              </a>
             </div>
 
             {/* Mobile Menu Icon */}
@@ -166,10 +174,13 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
               </a>
-              <a href="mailto:marketingnutmage@gmail.com" className="text-green-600 hover:text-green-700">
+              <a href="mailto:Marketing@nutmage.com" className="text-green-600 hover:text-green-700">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
+              </a>
+              <a href="https://wa.me/919810159907" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700">
+                <span className="text-lg">💬</span>
               </a>
             </div>
           </div>
@@ -235,6 +246,9 @@ export default function Home() {
                     <a href="tel:+919810159907" className="hover:underline">+91-9810159907</a>
                   </div>
                   <div className="text-sm opacity-90">www.nutmage.com</div>
+                  <a href="https://wa.me/919810159907" target="_blank" rel="noopener noreferrer" className="inline-block mt-3 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+                    💬 WhatsApp
+                  </a>
                 </div>
               </div>
             </div>
@@ -257,17 +271,7 @@ export default function Home() {
           {/* Image Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
             <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group h-48">
-              <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                <div className="text-center p-4">
-                  <div className="w-20 h-20 mx-auto mb-2 bg-white rounded-full flex items-center justify-center">
-                    <svg className="w-12 h-12 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7z"/>
-                    </svg>
-                  </div>
-                  <h3 className="text-sm font-bold text-gray-700">SOFIA</h3>
-                  <p className="text-xs text-gray-600">Global Trade Ventures</p>
-                </div>
-              </div>
+              <img src="/69.png" alt="SOFIA Global Trade Ventures" className="w-full h-full object-cover" />
             </div>
 
             <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group h-48">
@@ -399,6 +403,9 @@ export default function Home() {
                   +91-9810159907
                 </a>
               </div>
+              <a href="https://wa.me/919810159907" target="_blank" rel="noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-bold transition-colors text-sm md:text-base">
+                💬 WhatsApp
+              </a>
             </div>
           </div>
           
@@ -485,6 +492,9 @@ export default function Home() {
               <div className="space-y-2 text-xs">
                 <div><a href="tel:+919319527526" className="text-gray-300 hover:text-green-400 transition-colors">+91-9319527526</a></div>
                 <div><a href="tel:+919810159907" className="text-gray-300 hover:text-green-400 transition-colors">+91-9810159907</a></div>
+                <a href="https://wa.me/919810159907" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 hover:bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold transition-colors mt-2">
+                  💬 WhatsApp
+                </a>
               </div>
             </div>
 
@@ -506,8 +516,8 @@ export default function Home() {
                 <h4 className="font-bold text-sm">BUSINESS INFO</h4>
               </div>
               <div className="space-y-2 text-xs text-gray-300">
-                <div><span className="text-gray-400">IEC:</span> 05XX9999XX</div>
-                <div><span className="text-gray-400">GSTIN:</span> 07ABCDE1234F1Z9</div>
+                <div><span className="text-gray-400">IEC:</span> EUGPA4906P</div>
+                <div><span className="text-gray-400">GSTIN:</span> 07EUGPA4906P1ZC</div>
               </div>
             </div>
           </div>
