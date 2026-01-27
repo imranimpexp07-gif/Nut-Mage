@@ -170,7 +170,7 @@ export default function Gallery() {
                 <h4 className="font-bold text-sm">EMAIL</h4>
               </div>
               <div className="text-xs">
-                <a href="mailto:Marketing@nutmage.com" className="text-gray-300 hover:text-green-400 transition-colors break-all">Marketing@nutmage.com</a>
+                <a href="mailto:Marketingnutmage@gmail.com" className="text-gray-300 hover:text-green-400 transition-colors break-all">Marketingnutmage@gmail.com</a>
               </div>
             </div>
 
